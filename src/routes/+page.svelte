@@ -1,5 +1,8 @@
 <script>
     import github_logo from '/src/github-mark.svg?raw'
+    import ProjectCard from '$lib/components/ProjectCard.svelte';
+    import { ProgrammingLanguages } from '$lib/model/ProgrammingLanguages';
+    import { ProjectPlatforms } from '$lib/model/ProjectPlatform';
 </script>
 
 <main class="flex min-h-screen px-8 md:px-24 py-4 md:py-12 flex-col items-center">
