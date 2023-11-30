@@ -1,8 +1,6 @@
 <script>
     import github_logo from '/src/github-mark.svg?raw'
-    import ProjectCard from '$lib/components/ProjectCard.svelte';
-    import { ProgrammingLanguages } from '$lib/model/ProgrammingLanguages';
-    import { ProjectPlatforms } from '$lib/model/ProjectPlatform';
+    import ProjectOverview from '$lib/components/ProjectOverview.svelte';
 </script>
 
 <main class="flex min-h-screen px-8 md:px-24 py-4 md:py-12 flex-col items-center">
@@ -39,8 +37,8 @@
             </div>
         </div>
         <div class="space-y-6">
-            <!--<h2 class="text-xl font-semibold">Featured Projects</h2>-->
-            <!--<ProjectOverview/>-->
+            <h2 class="text-xl font-semibold">Featured Projects</h2>
+            <ProjectOverview/>
         </div>
     </div>
 </main>

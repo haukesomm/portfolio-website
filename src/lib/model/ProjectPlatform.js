@@ -12,10 +12,10 @@ import { CommandLine, GlobeEuropeAfrica } from "svelte-heros-v2"
 export const ProjectPlatforms = {
     web: {
         name: 'Web',
-        svg: CommandLine
+        svg: GlobeEuropeAfrica
     },
     macOS: {
         name: 'macOS',
-        svg: GlobeEuropeAfrica
+        svg: CommandLine
     }
 }

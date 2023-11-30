@@ -18,6 +18,6 @@ export const ProgrammingLanguages = {
     },
     js: {
         name: 'JavaScript',
-        colorClasses: 'bg-yellow-500'
+        colorClasses: 'bg-yellow-400'
     }
 }

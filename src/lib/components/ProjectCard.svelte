@@ -1,5 +1,5 @@
 <script>
-    import github_logo from '/src/github-mark.svg?raw'
+    import { CodeBracket, CodeBracketSquare } from 'svelte-heros-v2';
 
     /**
      * Title of the project.
@@ -23,12 +23,10 @@
     export let platform;
 </script>
 
-<div class="w-full h-fit p-4 flex flex-col gap-4 rounded-lg border dark:border-gray-700 bg-background shadow transition duration-200 hover:scale-105">
+<div class="w-full h-fit p-4 flex flex-col gap-4 rounded-lg border dark:border-gray-700 bg-background shadow-sm transition duration-200 hover:scale-105">
     <div class="flex flex-row justify-between items-center gap-4">
         <p class="font-semibold">{title}</p>
-        <div class="w-6 h-6">
-            {@html github_logo}
-        </div>
+        <CodeBracketSquare class="w-6 h-6"/>
     </div>
     <div>
         <slot></slot>
