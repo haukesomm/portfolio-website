@@ -1,5 +1,5 @@
 <script>
-    import github_logo from '/src/github-mark.svg?raw'
+    import github_logo from '/src/assets/github-mark.svg?raw'
     import ProjectOverview from '$lib/components/ProjectOverview.svelte';
 </script>
 

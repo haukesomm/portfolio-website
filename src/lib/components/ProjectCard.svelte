@@ -21,12 +21,23 @@
      * @type {import("$lib/model/ProjectPlatform").ProjectPlatform}
      */
     export let platform;
+
+    /**
+     * @type {import('svelte').SvelteComponent}
+     */
+    export let svg = null;
 </script>
 
 <div class="w-full h-fit p-4 flex flex-col gap-4 rounded-lg border dark:border-gray-700 bg-background shadow-sm transition duration-200 hover:scale-105">
     <div class="flex flex-row justify-between items-center gap-4">
         <p class="font-semibold">{title}</p>
-        <CodeBracketSquare class="w-6 h-6"/>
+        <div class="w-6 h-6">
+            {#if svg != null}
+                {@html svg}
+            {:else}
+                <CodeBracketSquare/>
+            {/if}
+        </div>
     </div>
     <div>
         <slot></slot>

@@ -4,6 +4,7 @@
     import { ProgrammingLanguages } from "$lib/model/ProgrammingLanguages";
     import { ProjectPlatforms } from "$lib/model/ProjectPlatform";
     import { ArrowTopRightOnSquare } from "svelte-heros-v2";
+    import sokoban_logo from "/src/assets/sokoban.svg?raw"
 </script>
 
 <div class="-m-4 grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -11,14 +12,14 @@
         title="Sokoban"
         language={ProgrammingLanguages.kotlin}
         platform={ProjectPlatforms.web}
+        svg={sokoban_logo}
     >
         <div class="space-y-4">
-            <p>{
-                `
-                Web-based clone of the popular puzzle game Sokoban using Kotlin MPP and the fritz2
-                framework.
-                `
-            }</p>
+            <p>
+                {'Web-based clone of the popular puzzle game Sokoban using Kotlin MPP and the '}
+                <a class="inline-link" href="https://github.com/jwstegemann/fritz2" target="_blank">fritz2</a>
+                {' framework.'}
+            </p>
             <PillButton
                 title="Play online"
                 href="https://sokoban.haukesomm.de"
