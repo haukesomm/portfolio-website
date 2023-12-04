@@ -1,15 +1,18 @@
 <script>
     import github_logo from '/src/assets/github-mark.svg?raw'
     import ProjectOverview from '$lib/components/ProjectOverview.svelte';
+    import appConfig from '$lib/app.config'
+
+    export let data;
 </script>
 
 <main class="flex min-h-screen px-8 md:px-24 py-4 md:py-12 flex-col items-center">
     <div class="w-full flex flex-col gap-12 max-w-4xl">
         <div class="pb-4 w-full flex justify-between items-center border-b border-gray-300 dark:border-gray-700">
             <h1 class="w-max text-lg font-semibold whitespace-nowrap">
-                Hauke Sommerfeld
+                {appConfig.title}
             </h1>
-            <a class="w-6 h-6" href="https://github.com/haukesomm" target="_blank">
+            <a class="w-6 h-6" href={appConfig.github_url} target="_blank">
                 {@html github_logo}
             </a>
         </div>
@@ -38,7 +41,7 @@
         </div>
         <div class="space-y-6">
             <h2 class="text-xl font-semibold">Featured Projects</h2>
-            <ProjectOverview/>
+            <ProjectOverview projects={data.data}/>
         </div>
     </div>
 </main>

@@ -1,0 +1,10 @@
+const appConfig = {
+    title: '',
+    github_url: '',
+    supabase: {
+        url: '',
+        jwt: ''
+    }
+};
+
+export default appConfig;
