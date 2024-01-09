@@ -1,5 +1,5 @@
 <script>
-    import { CodeBracketSquare } from 'svelte-heros-v2';
+    import {CodeBracketSquare, LightBulb, Star} from 'svelte-heros-v2';
 
     /**
      * Title of the project.
@@ -21,15 +21,13 @@
     export let svg = null;
 </script>
 
-<div class="w-full h-fit p-4 flex flex-col gap-4 rounded-xl border dark:border-gray-700 bg-background shadow-sm transition duration-200 hover:scale-105">
+<div class="w-full h-fit p-4 flex flex-col gap-4 rounded-lg border dark:border-gray-700 bg-background shadow-sm transition duration-200 hover:scale-105">
     <div class="flex flex-row items-center gap-2">
-        <div class="w-6 h-6">
-            {#if svg != null}
+        {#if svg != null}
+            <div class="w-6 h-6">
                 {@html svg}
-            {:else}
-                <CodeBracketSquare/>
-            {/if}
-        </div>
+            </div>
+        {/if}
         <p class="font-semibold">{title}</p>
     </div>
     <div>
