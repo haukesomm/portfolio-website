@@ -25,11 +25,13 @@
                         svg={ArrowTopRightOnSquare}
                     />
                 {/if}
-                <PillButton
-                    title="View on GitHub"
-                    href={project.github_link}
-                    svg={ArrowTopRightOnSquare}
-                />
+                {#if project.github_link}
+                    <PillButton
+                        title="View on GitHub"
+                        href={project.github_link}
+                        svg={ArrowTopRightOnSquare}
+                    />
+                {/if}
             </div>
         </ProjectCard>
     {/each}

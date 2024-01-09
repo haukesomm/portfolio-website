@@ -31,7 +31,8 @@ export const projects = [
     {
         title: 'portfolio-website',
         description: 'This portfolio website. Built with SvelteKit, JavaScript and Tailwind CSS.',
-        github_link: 'https://github.com/haukesomm/portfolio-website',
+        // TODO: Re-enable when the repo is public
+        // github_link: 'https://github.com/haukesomm/portfolio-website',
         language: 'js'
     }
 ]
