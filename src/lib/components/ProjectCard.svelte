@@ -1,5 +1,5 @@
 <script>
-    import { CodeBracket, CodeBracketSquare } from 'svelte-heros-v2';
+    import { CodeBracketSquare } from 'svelte-heros-v2';
 
     /**
      * Title of the project.
@@ -7,12 +7,6 @@
      * @type {string}
      */
     export let title;
-
-    /**
-     * @typedef {Object} ProgrammingLanguage
-     * @property {string} name - The name of the programming language.
-     * @property {string} css_color - The CSS classes representing the color of the language.
-     */
 
     /**
      * Programming language used by the project.
@@ -42,7 +36,7 @@
         <slot></slot>
     </div>
     <div class="flex flex-row gap-2 items-center">
-        <div class={`w-3 h-3 rounded-full`} style="background: {language.css_color};"/>
+        <div class={`w-3 h-3 rounded-full`} style="background: {language.color};"/>
         <span class="text-sm">{language.name}</span>
     </div>
 </div>

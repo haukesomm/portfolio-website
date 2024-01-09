@@ -1,4 +1,5 @@
 <script>
+    import {programming_languages} from "$lib/programming_language.js";
     import ProjectCard from "./ProjectCard.svelte";
     import PillButton from "./PillButton.svelte";
     import { ArrowTopRightOnSquare } from "svelte-heros-v2";
@@ -10,25 +11,25 @@
     {#each projects as project}
         <ProjectCard
             title={project.title}
-            language={project.programming_language}
+            language={programming_languages[project.language]}
             svg={project.svg}
         >
             <div class="space-y-4">
                 <p>
                     {project.description}
                 </p>
-                {#if project.app_link}
+                {#if project.app_link_href}
                     <PillButton
-                        title={project.app_label}
-                        href={project.app_link}
+                        title={project.app_link_title}
+                        href={project.app_link_href}
                         svg={ArrowTopRightOnSquare}
                     />
                 {/if}
                 <PillButton
-                        title={project.repo_label}
-                        href={project.repo_link}
-                        svg={ArrowTopRightOnSquare}
-                    />
+                    title="View on GitHub"
+                    href={project.github_link}
+                    svg={ArrowTopRightOnSquare}
+                />
             </div>
         </ProjectCard>
     {/each}
