@@ -43,5 +43,9 @@
             <h2 class="text-xl font-semibold">Featured Projects</h2>
             <ProjectOverview projects={projects}/>
         </div>
+        <div class="flex flex-row flex-wrap justify-center items-center gap-x-4 gap-y-2 text-sm text-gray-600 dark:text-gray-400 whitespace-nowrap">
+            <span>© 2024, Hauke Sommerfeld</span>
+            <span>Made with ♡ in Hamburg, Germany</span>
+        </div>
     </div>
 </main>
