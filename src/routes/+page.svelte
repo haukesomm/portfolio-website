@@ -2,6 +2,7 @@
     import github_logo from '/src/assets/github-mark.svg?raw'
     import ProjectOverview from '$lib/components/ProjectOverview.svelte';
     import {projects} from "$lib/projects.js";
+    import SkillOverview from "$lib/components/SkillOverview.svelte";
 </script>
 
 <main class="flex min-h-screen px-8 md:px-24 py-4 md:py-12 flex-col items-center">
@@ -37,6 +38,12 @@
                         `
                     }
                 </p>
+            </div>
+        </div>
+        <div class="flex flex-col gap-6">
+            <h2 class="text-xl font-semibold">Skills</h2>
+            <div>
+                <SkillOverview/>
             </div>
         </div>
         <div class="space-y-6">

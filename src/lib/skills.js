@@ -1,0 +1,15 @@
+export const skills = [
+    "Kotlin",
+    "Java",
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "TailwindCSS",
+    "Git",
+    "GitHub",
+    "Open Source",
+    "Linux",
+    "Cloud",
+    "Microsoft-Azure",
+    "Clean-Code",
+]
