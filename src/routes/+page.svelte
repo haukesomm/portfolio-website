@@ -1,5 +1,6 @@
 <script>
     import github_logo from '/src/assets/github-mark.svg?raw'
+    import linkedin_logo from '/src/assets/linkedin.svg?raw'
     import ProjectOverview from '$lib/components/ProjectOverview.svelte';
     import {projects} from "$lib/projects.js";
     import SkillOverview from "$lib/components/SkillOverview.svelte";
@@ -11,9 +12,14 @@
             <h1 class="w-max text-lg font-semibold whitespace-nowrap">
                 Hauke Sommerfeld
             </h1>
-            <a class="w-6 h-6" href="https://github.com/haukesomm" target="_blank">
-                {@html github_logo}
-            </a>
+            <div class="flex flex-row items-center gap-6">
+                <a class="w-5 h-5" href="https://www.linkedin.com/in/hauke-sommerfeld-bb47aa268/" target="_blank">
+                    {@html linkedin_logo}
+                </a>
+                <a class="w-6 h-6" href="https://github.com/haukesomm" target="_blank">
+                    {@html github_logo}
+                </a>
+            </div>
         </div>
         <div class="space-y-6">
             <p class="text-2xl font-semibold">
