@@ -7,7 +7,7 @@
 /**
  * @type {Object.<string, ProgrammingLanguage>}
  */
-export const programming_languages = {
+export const programmingLanguages = {
     kotlin: {
         name: 'Kotlin',
         color: '#7F52FF'

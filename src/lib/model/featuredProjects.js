@@ -12,7 +12,7 @@
 /**
  * @type {Object.<string, Project>}
  */
-export const projects = [
+export const featuredProjects = [
     {
         title: 'Sokoban',
         description: 'Web-based clone of the popular puzzle game Sokoban using Kotlin MPP and the fritz2 framework.',

@@ -1,5 +1,5 @@
 <script>
-    import {skills} from "./skills.js";
+    import {skills} from "../model/skills.js";
 </script>
 
 <div class="flex flex-row flex-wrap gap-3">
