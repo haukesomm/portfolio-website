@@ -4,7 +4,20 @@
     import ProjectOverview from '$lib/projects/ProjectOverview.svelte';
     import {projects} from "$lib/projects/projects.js";
     import SkillOverview from "$lib/skills/SkillOverview.svelte";
+
+    const description = `
+        Professional full-stack software engineer based in the heart of Hamburg, Germany.
+        Focusing on web technologies, I am passionate about building high-quality software that is easy to maintain
+        and fun to use.
+    `;
 </script>
+
+<svelte:head>
+    <meta name="description" content={description}/>
+
+    <meta property="og:title" content="Hauke Sommerfeld - Full-Stack Software-Engineer" />
+    <meta property="og:description" content={description}/>
+</svelte:head>
 
 <main class="flex min-h-screen px-8 md:px-24 py-4 md:py-12 flex-col items-center">
     <div class="w-full flex flex-col gap-12 max-w-4xl">
@@ -30,8 +43,9 @@
                     {
                         `
                         I'm a professional full-stack software engineer based in the heart of Hamburg, Germany. 
-                        Currently, I'm focusing on both back-end and front-end web development. Additionally, I'm a
-                        dedicated advocate for free and open-source software, as well as an open web.
+                        Focusing on web technologies, I am passionate about building high-quality software that is easy
+                        to maintain and fun to use. Additionally, I'm a dedicated advocate for free and open-source
+                        software, as well as an open web.
                         `
                     }
                 </p>
