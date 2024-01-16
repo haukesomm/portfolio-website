@@ -47,7 +47,7 @@
             </div>
         </div>
         <div class="flex flex-col gap-6">
-            <h2 class="text-xl font-semibold">Skills</h2>
+            <h2 class="text-xl font-semibold">Skills & Technologies</h2>
             <div>
                 <SkillOverview/>
             </div>

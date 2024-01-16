@@ -10,7 +10,7 @@
 export const programming_languages = {
     kotlin: {
         name: 'Kotlin',
-        color: 'rgb(168, 85, 247)'
+        color: '#7F52FF'
     },
     python: {
         name: 'Python',
@@ -18,6 +18,6 @@ export const programming_languages = {
     },
     js: {
         name: 'JavaScript',
-        color: 'rgb(250, 204, 21)'
+        color: '#F7DF1E'
     }
 }
