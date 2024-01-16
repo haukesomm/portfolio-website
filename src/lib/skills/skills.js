@@ -1,11 +1,11 @@
-import kotlin_icon from "../assets/kotlin.svg?raw";
-import gradle_icon from "../assets/gradle.svg?raw";
-import html5_icon from "../assets/html5.svg?raw";
-import css_icon from "../assets/css3.svg?raw";
-import js_icon from "../assets/javascript.svg?raw";
-import tailwind_icon from "../assets/tailwindcss.svg?raw";
-import spring_icon from "../assets/spring.svg?raw";
-import azure_icon from "../assets/azuredevops.svg?raw";
+import kotlin_icon from "../../assets/kotlin.svg?raw";
+import gradle_icon from "../../assets/gradle.svg?raw";
+import html5_icon from "../../assets/html5.svg?raw";
+import css_icon from "../../assets/css3.svg?raw";
+import js_icon from "../../assets/javascript.svg?raw";
+import tailwind_icon from "../../assets/tailwindcss.svg?raw";
+import spring_icon from "../../assets/spring.svg?raw";
+import azure_icon from "../../assets/azuredevops.svg?raw";
 import fire_icon from "heroicons/24/solid/fire.svg?raw";
 
 export const skills = [

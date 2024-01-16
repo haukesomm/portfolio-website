@@ -1,9 +1,9 @@
 <script>
     import github_logo from '/src/assets/github-mark.svg?raw'
     import linkedin_logo from '/src/assets/linkedin.svg?raw'
-    import ProjectOverview from '$lib/components/ProjectOverview.svelte';
-    import {projects} from "$lib/projects.js";
-    import SkillOverview from "$lib/components/SkillOverview.svelte";
+    import ProjectOverview from '$lib/projects/ProjectOverview.svelte';
+    import {projects} from "$lib/projects/projects.js";
+    import SkillOverview from "$lib/skills/SkillOverview.svelte";
 </script>
 
 <main class="flex min-h-screen px-8 md:px-24 py-4 md:py-12 flex-col items-center">

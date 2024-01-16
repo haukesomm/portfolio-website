@@ -1,6 +1,4 @@
 <script>
-    import {CodeBracketSquare, LightBulb, Star} from 'svelte-heros-v2';
-
     /**
      * Title of the project.
      * 

@@ -1,7 +1,7 @@
 <script>
-    import {programming_languages} from "$lib/programming_language.js";
+    import {programming_languages} from "$lib/projects/programming_language.js";
     import ProjectCard from "./ProjectCard.svelte";
-    import PillButton from "./PillButton.svelte";
+    import PillButton from "../components/PillButton.svelte";
     import { ArrowTopRightOnSquare } from "svelte-heros-v2";
 
     export let projects;
