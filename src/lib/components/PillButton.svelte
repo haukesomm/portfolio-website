@@ -1,10 +1,11 @@
-<script>
-    export let title;
-    export let href;
-    /**
-     * @type {import('svelte').SvelteComponent}
-     */
-    export let svg;
+<script lang="ts">
+    import type {SvelteComponent} from "svelte";
+
+    export let title: string;
+
+    export let href: string;
+
+    export let svg: new (...args: any[]) => SvelteComponent;
 </script>
 
 <a 

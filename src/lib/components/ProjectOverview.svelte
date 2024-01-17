@@ -1,9 +1,9 @@
-<script>
-    import {programmingLanguages} from "$lib/model/programmingLanguages.js";
-    import {featuredProjects} from "$lib/model/featuredProjects.js";
+<script lang="ts">
+    import {programmingLanguages} from "$lib/model/programmingLanguages";
+    import {featuredProjects} from "$lib/model/featuredProjects";
     import ProjectCard from "../components/ProjectCard.svelte";
     import PillButton from "../components/PillButton.svelte";
-    import { ArrowTopRightOnSquare } from "svelte-heros-v2";
+    import {ArrowTopRightOnSquare} from "svelte-heros-v2";
 </script>
 
 <div class="-m-4 grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -19,7 +19,7 @@
                 </p>
                 {#if project.app_link_href}
                     <PillButton
-                        title={project.app_link_title}
+                        title={project.app_link_title || ""}
                         href={project.app_link_href}
                         svg={ArrowTopRightOnSquare}
                     />

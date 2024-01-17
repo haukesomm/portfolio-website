@@ -1,22 +1,11 @@
-<script>
-    /**
-     * Title of the project.
-     * 
-     * @type {string}
-     */
-    export let title;
+<script lang="ts">
+    import type {ProgrammingLanguage} from "$lib/model/programmingLanguages";
 
-    /**
-     * Programming language used by the project.
-     * 
-     * @type {ProgrammingLanguage}
-     */
-    export let language;
+    export let title: string;
 
-    /**
-     * @type {import('svelte').SvelteComponent}
-     */
-    export let svg = null;
+    export let language: ProgrammingLanguage;
+
+    export let svg: string | undefined;
 </script>
 
 <div class="w-full h-fit p-4 flex flex-col gap-4 rounded-lg border dark:border-gray-700 bg-background shadow-sm transition duration-200 hover:scale-105">

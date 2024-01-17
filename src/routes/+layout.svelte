@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
     import "../app.css";
     import linkedin_logo from "../assets/linkedin.svg?raw";
     import github_logo from "../assets/github-mark.svg?raw";
 
-    const description = `
+    const description: string = `
         Professional full-stack software engineer based in the heart of Hamburg, Germany.
         Focusing on web technologies, I am passionate about building high-quality software that is easy to maintain
         and fun to use.`;

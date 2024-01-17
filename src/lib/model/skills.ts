@@ -8,7 +8,13 @@ import spring_icon from "../../assets/spring.svg?raw";
 import azure_icon from "../../assets/azuredevops.svg?raw";
 import fire_icon from "heroicons/24/solid/fire.svg?raw";
 
-export const skills = [
+export type Skill = {
+    title: string,
+    svg: string,
+    color: string
+}
+
+export const skills: Skill[] = [
     {
         title: "Kotlin",
         svg: kotlin_icon,

@@ -1,18 +1,15 @@
-/**
- * @typedef {Object} Project
- * @property {string} title - The title of the project.
- * @property {string} description - The description of the project.
- * @property {string} svg - Optional SVG icon for the project.
- * @property {string} app_link_title - Optional title for the link to the app.
- * @property {string} app_link_href - Optional href for the link to the app.
- * @property {string} github_link - The link to the GitHub repository of the project.
- * @property {string} language - The programming language of the project.
- */
+export type Project = {
+    title: string,
+    description: string,
+    svg?: string,
+    app_link_title?: string,
+    app_link_href?: string,
+    github_link?: string,
+    language: string
 
-/**
- * @type {Object.<string, Project>}
- */
-export const featuredProjects = [
+}
+
+export const featuredProjects: Project[] = [
     {
         title: 'Sokoban',
         description: 'Web-based clone of the popular puzzle game Sokoban using Kotlin MPP and the fritz2 framework.',

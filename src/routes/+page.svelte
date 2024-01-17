@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import ProjectOverview from '$lib/components/ProjectOverview.svelte';
     import SkillOverview from "$lib/components/SkillOverview.svelte";
     import SubSection from "$lib/components/SubSection.svelte";
