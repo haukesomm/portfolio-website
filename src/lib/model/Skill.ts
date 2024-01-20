@@ -2,7 +2,7 @@ import kotlin_icon from "../../assets/kotlin.svg?raw";
 import gradle_icon from "../../assets/gradle.svg?raw";
 import html5_icon from "../../assets/html5.svg?raw";
 import css_icon from "../../assets/css3.svg?raw";
-import js_icon from "../../assets/javascript.svg?raw";
+import ts_icon from "../../assets/typescript.svg?raw";
 import tailwind_icon from "../../assets/tailwindcss.svg?raw";
 import spring_icon from "../../assets/spring.svg?raw";
 import azure_icon from "../../assets/azuredevops.svg?raw";
@@ -41,9 +41,9 @@ export const skill: Skill[] = [
         color: '#1572B6'
     },
     {
-        title: "JavaScript",
-        svg: js_icon,
-        color: '#F7DF1E'
+        title: "TypeScript",
+        svg: ts_icon,
+        color: '#3178C6'
     },
     {
         title: "TailwindCSS",
