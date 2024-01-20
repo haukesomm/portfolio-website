@@ -2,6 +2,6 @@
 schema:
   - https://api.github.com/graphql:
       headers:
-        Authorization: bearer ${PUBLIC_GITHUB_PAT}
+        Authorization: bearer ${GITHUB_PAT}
 
 documents: './*.graphql'

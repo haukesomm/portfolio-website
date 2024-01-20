@@ -16,15 +16,13 @@ In order to be able to talk to the GitHub API, you will need to create a persona
 file in the root of the project. The `.env` file should look like this:
 
 ```
-PUBLIC_GITHUB_PAT=your_token_here
+GITHUB_PAT=your_token_here
 ```
 
-Alternatively, you can set the `PUBLIC_GITHUB_PAT` environment variable to your token directly.
+Alternatively, you can set the `GITHUB_PAT` environment variable to your token directly.
 
 > **Note:** The environment variables specified in .env are only available in development. In production, you will need to
 > set the environment variables directly.
 
-> **Important**: The token **WILL BE PUBLICLY VISIBLE** in the source code of the built website and in the dev tools of
-> the browser.  
-> Do not use a token that has access to private repositories or other sensitive data! It only needs read access to 
-> public repositories.
+> **Important**: Do not use a token that has access to private repositories or other sensitive data! It only needs read access to 
+> public repositories. Also, make sure to not commit your token to a public repository.
