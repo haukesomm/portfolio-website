@@ -2,6 +2,12 @@
     import ProjectOverview from '$lib/components/ProjectOverview.svelte';
     import SkillOverview from "$lib/components/SkillOverview.svelte";
     import SubSection from "$lib/components/SubSection.svelte";
+    import type {PageData} from "./$types"
+    import type {Repository} from "$lib/model/Repository";
+
+    export let data: PageData;
+
+    let featuredRepos: Repository[] = data.repositories;
 </script>
 
 <div class="space-y-6">
@@ -28,5 +34,7 @@
 </SubSection>
 
 <SubSection title="Featured Projects">
-    <ProjectOverview/>
+    <div class="-m-4">
+        <ProjectOverview repos={featuredRepos}/>
+    </div>
 </SubSection>

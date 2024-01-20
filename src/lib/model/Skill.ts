@@ -14,7 +14,7 @@ export type Skill = {
     color: string
 }
 
-export const skills: Skill[] = [
+export const skill: Skill[] = [
     {
         title: "Kotlin",
         svg: kotlin_icon,

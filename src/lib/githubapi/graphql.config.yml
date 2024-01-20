@@ -1,0 +1,7 @@
+# Configuration of the GraphQL schema and documents for the JetBrains GraphQL plugin
+schema:
+  - https://api.github.com/graphql:
+      headers:
+        Authorization: bearer ${PUBLIC_GITHUB_PAT}
+
+documents: './*.graphql'

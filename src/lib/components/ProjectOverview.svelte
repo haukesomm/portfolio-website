@@ -1,37 +1,14 @@
 <script lang="ts">
-    import {programmingLanguages} from "$lib/model/programmingLanguages";
-    import {featuredProjects} from "$lib/model/featuredProjects";
     import ProjectCard from "../components/ProjectCard.svelte";
-    import PillButton from "../components/PillButton.svelte";
-    import {ArrowTopRightOnSquare} from "svelte-heros-v2";
+    import type {Repository} from "$lib/model/Repository";
+
+    export let repos: Repository[];
 </script>
 
-<div class="-m-4 grid grid-cols-1 md:grid-cols-3 gap-6">
-    {#each featuredProjects as project}
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {#each repos as repo}
         <ProjectCard
-            title={project.title}
-            language={programmingLanguages[project.language]}
-            svg={project.svg}
-        >
-            <div class="space-y-4">
-                <p>
-                    {project.description}
-                </p>
-                {#if project.app_link_href}
-                    <PillButton
-                        title={project.app_link_title || ""}
-                        href={project.app_link_href}
-                        svg={ArrowTopRightOnSquare}
-                    />
-                {/if}
-                {#if project.github_link}
-                    <PillButton
-                        title="View on GitHub"
-                        href={project.github_link}
-                        svg={ArrowTopRightOnSquare}
-                    />
-                {/if}
-            </div>
-        </ProjectCard>
+            repo={repo}
+        />
     {/each}
 </div>

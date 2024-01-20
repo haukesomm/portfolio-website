@@ -1,0 +1,23 @@
+query GetFeaturedRepositories($username: String!) {
+  user(login: $username) {
+    pinnedItems(types: REPOSITORY, first: 10) {
+      nodes {
+        ... on Repository {
+          name,
+          description,
+          stargazerCount,
+          url,
+          homepageUrl,
+          primaryLanguage {
+            name,
+            color
+          },
+          owner {
+            login,
+            url
+          }
+        }
+      }
+    }
+  }
+}
