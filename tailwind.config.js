@@ -12,6 +12,7 @@ export default {
         'primary': colors.blue,
         'secondary': colors.blue,
         'background': 'var(--background)',
+        'page': 'var(--page-background)',
       }
     },
   },
