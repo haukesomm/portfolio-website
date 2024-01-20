@@ -1,21 +1,17 @@
 <script lang="ts">
     import {ArrowTopRightOnSquare, Star, User} from "svelte-heros-v2";
     import PillButton from "$lib/components/PillButton.svelte";
-    import type {Repository} from "$lib/model/Repository";
+    import {type Repository, repositoryRoleForUsername} from "$lib/model/Repository";
 
-    export let repo: Repository
+    export let username: string;
+    export let repo: Repository;
 </script>
 
 <div class="w-full h-fit p-4 flex flex-col gap-4 rounded-xl border dark:border-gray-700 bg-background shadow-sm transition duration-200 hover:scale-105">
     <div class="flex flex-row gap-2 justify-between items-center">
         <p class="font-semibold">{repo.name}</p>
         <div class="px-1 border dark:border-gray-700 rounded-full text-xs">
-            <!-- TODO: Find a cleaner way -->
-            {#if repo.owner.login === "haukesomm"}
-                Owner
-            {:else}
-                Contributor
-            {/if}
+            {repositoryRoleForUsername(username, repo)}
         </div>
     </div>
 

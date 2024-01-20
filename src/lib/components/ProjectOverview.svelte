@@ -1,14 +1,15 @@
 <script lang="ts">
     import ProjectCard from "../components/ProjectCard.svelte";
-    import type {Repository} from "$lib/model/Repository";
+    import type {UserWithPinnedRepos} from "$lib/model/UserWithPinnedRepos";
 
-    export let repos: Repository[];
+    export let userWithPinnedRepos: UserWithPinnedRepos;
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    {#each repos as repo}
+    {#each userWithPinnedRepos.pinnedItems.nodes as repo}
         <ProjectCard
-            repo={repo}
+            username={userWithPinnedRepos.login}
+            {repo}
         />
     {/each}
 </div>

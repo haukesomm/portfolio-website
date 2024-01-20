@@ -1,5 +1,6 @@
 query GetFeaturedRepositories($username: String!) {
   user(login: $username) {
+    login,
     pinnedItems(types: REPOSITORY, first: 10) {
       nodes {
         ... on Repository {
@@ -15,7 +16,12 @@ query GetFeaturedRepositories($username: String!) {
           owner {
             login,
             url
-          }
+          },
+          collaborators {
+            nodes {
+              login
+            }
+          },
         }
       }
     }
