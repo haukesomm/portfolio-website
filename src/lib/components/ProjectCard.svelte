@@ -2,9 +2,15 @@
     import {ArrowTopRightOnSquare, Star, User} from "svelte-heros-v2";
     import PillButton from "$lib/components/PillButton.svelte";
     import {type Repository, repositoryRoleForUsername} from "$lib/model/Repository";
+    import {page} from "$app/stores";
 
     export let username: string;
+
     export let repo: Repository;
+
+    const homepageUrl = repo.homepageUrl ? new URL(repo.homepageUrl) : undefined;
+
+    const areSameOrigin = (first: URL, second: URL) => first.origin === second.origin;
 </script>
 
 <div class="w-full h-fit p-4 flex flex-col gap-4 rounded-xl border dark:border-gray-700 bg-background shadow-sm transition duration-200 hover:scale-105">
@@ -17,10 +23,10 @@
 
     <p>{repo.description}</p>
 
-    {#if repo.homepageUrl}
+    {#if homepageUrl && !areSameOrigin(homepageUrl, $page.url)}
         <PillButton
             title="Homepage"
-            href={repo.homepageUrl}
+            href={homepageUrl.href}
             svg={ArrowTopRightOnSquare}
         />
     {/if}

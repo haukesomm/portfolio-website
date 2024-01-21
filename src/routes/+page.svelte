@@ -30,7 +30,7 @@
     <SkillOverview/>
 </SubSection>
 
-<SubSection title="Featured Projects">
+<SubSection title="Featured GitHub Projects">
     <div class="-m-4">
         <ProjectOverview userWithPinnedRepos={data}/>
     </div>

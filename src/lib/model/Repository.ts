@@ -7,7 +7,7 @@ export type Repository = {
     description: string,
     stargazerCount: number,
     url: string,
-    homepageUrl: string,
+    homepageUrl: string | undefined,
     primaryLanguage: ProgrammingLanguage,
     owner: RepositoryOwner,
     collaborators: {
