@@ -1,5 +1,6 @@
 <script lang="ts">
     import "../app.css";
+    import {page} from "$app/stores";
     import linkedin_logo from "../assets/linkedin.svg?raw";
     import github_logo from "../assets/github-mark.svg?raw";
 
@@ -7,13 +8,18 @@
         Professional full-stack software engineer based in the heart of Hamburg, Germany.
         Focusing on web technologies, I am passionate about building high-quality software that is easy to maintain
         and fun to use.`;
+
+    const ogImageUrl: string = $page.url.origin + "/og-image.png";
 </script>
 
 <svelte:head>
   <meta name="description" content={description}/>
 
-  <meta property="og:title" content="Hauke Sommerfeld - Full-Stack Software-Engineer" />
+  <meta property="og:title" content="Hauke Sommerfeld • Full-Stack Software-Engineer" />
   <meta property="og:description" content={description}/>
+  <meta property="og:url" content="https://haukesomm.de"/>
+  <meta property="og:image" content={ogImageUrl}/>
+  <meta property="og:image:alt" content="Website logo on a light background"/>
 </svelte:head>
 
 <main class="flex min-h-screen px-8 md:px-24 pb-4 md:py-12 flex-col items-center">
