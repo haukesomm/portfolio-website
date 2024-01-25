@@ -17,7 +17,7 @@ export type Skill = {
 
 const hexColor = (hex: string) => `#${hex}`
 
-export const skill: Skill[] = [
+export const skills: Skill[] = [
     {
         title: "Kotlin",
         path: siKotlin.path,
