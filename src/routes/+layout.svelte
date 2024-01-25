@@ -30,6 +30,9 @@
           Hauke Sommerfeld
         </h1>
         <div class="flex flex-row items-center gap-6">
+          <a class="w-5 h-5" href="https://www.xing.com/profile/Hauke_Sommerfeld" target="_blank">
+            <VectorIcon path={siXing.path}/>
+          </a>
           <a class="w-5 h-5" href="https://www.linkedin.com/in/hauke-sommerfeld-bb47aa268/" target="_blank">
             <VectorIcon path={siLinkedin.path}/>
           </a>
