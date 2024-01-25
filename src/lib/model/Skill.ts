@@ -49,6 +49,10 @@ export const skill: Skill[] = [
         color: hexColor(siTailwindcss.hex)
     },
     {
+        title: "GitHub",
+        path: siGithub.path
+    },
+    {
         title: "Microsoft-Azure",
         path: siAzuredevops.path,
         color: hexColor(siCss3.hex)
@@ -58,4 +62,9 @@ export const skill: Skill[] = [
         path: siGradle.path,
         color: '#046b83'
     },
+    {
+        title: "Playwright",
+        path: siPlaywright.path,
+        color: hexColor(siPlaywright.hex)
+    }
 ]
