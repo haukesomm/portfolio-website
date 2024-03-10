@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Headline from "$lib/components/Headline.svelte";
+
     export let title: string;
 
     export let subtitle: string | undefined = undefined;
@@ -6,7 +8,7 @@
 
 <div class="space-y-6">
     <div>
-        <h2 class="text-xl font-semibold">{title}</h2>
+        <Headline text="{title}"/>
         {#if subtitle}
             <p class="text-gray-600 dark:text-gray-400">{subtitle}</p>
         {/if}

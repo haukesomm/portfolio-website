@@ -4,14 +4,14 @@
 
 :root {
   --foreground: #000000;
-  --page-background: #f1f7ff;
+  --page-background: theme('colors.primary.50');
   --background: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground: #ffffff;
-    --page-background: #121d44;
+    --page-background: theme('colors.primary.950');
     --background: #000000;
   }
 }
