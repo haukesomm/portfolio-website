@@ -13,7 +13,7 @@
     const areSameOrigin = (first: URL, second: URL) => first.origin === second.origin;
 </script>
 
-<div class="w-full h-fit p-4 flex flex-col gap-4 rounded-xl border dark:border-gray-700 bg-background shadow-sm transition duration-200 hover:scale-105">
+<div class="w-full h-fit p-4 flex flex-col gap-4 rounded-xl border dark:border-gray-700 bg-background shadow-sm">
     <div class="flex flex-row gap-2 justify-between items-center">
         <p class="font-semibold">{repo.name}</p>
         <div class="px-1 border dark:border-gray-700 rounded-full text-xs">

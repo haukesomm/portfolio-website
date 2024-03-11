@@ -9,7 +9,7 @@
 </script>
 
 <a 
-    class="px-2 py-1 flex flex-row gap-2 justify-center items-center border dark:border-gray-600 rounded-full bg-gray-100 dark:bg-gray-800 text-sm"
+    class="px-2 py-1 flex flex-row gap-2 justify-center items-center border dark:border-gray-600 rounded-full bg-gray-100 dark:bg-gray-800 text-sm transition duration-200 hover:scale-105"
     {href}
     target="_blank"
 >
