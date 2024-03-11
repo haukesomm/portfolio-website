@@ -6,7 +6,7 @@ import {
     siTypescript,
     siTailwindcss,
     siSpring,
-    siAzuredevops, siPlaywright, siGithub
+    siAzuredevops, siPlaywright, siGithub, siRust, siSvelte, siVercel
 } from "simple-icons";
 
 export type Skill = {
@@ -66,5 +66,15 @@ export const skills: Skill[] = [
         title: "Playwright",
         path: siPlaywright.path,
         color: hexColor(siPlaywright.hex)
+    },
+    {
+        title: "Rust",
+        path: siRust.path,
+        color: '#dea685'
+    },
+    {
+        title: "Svelte",
+        path: siSvelte.path,
+        color: hexColor(siSvelte.hex)
     }
 ]
