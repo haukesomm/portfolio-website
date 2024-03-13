@@ -21,8 +21,10 @@ GITHUB_PAT=your_token_here
 
 Alternatively, you can set the `GITHUB_PAT` environment variable to your token directly.
 
-> **Note:** The environment variables specified in .env are only available in development. In production, you will need to
+> [!NOTE]   
+> The environment variables specified in .env are only available in development. In production, you will need to
 > set the environment variables directly.
 
-> **Important**: Do not use a token that has access to private repositories or other sensitive data! It only needs read access to 
+> [!WARNING] 
+> Do not use a token that has access to private repositories or other sensitive data! It only needs read access to 
 > public repositories. Also, make sure to not commit your token to a public repository.
