@@ -68,13 +68,13 @@ export const skills: Skill[] = [
         color: hexColor(siPlaywright.hex)
     },
     {
+        title: "Svelte",
+        path: siSvelte.path,
+        color: hexColor(siSvelte.hex)
+    },
+    {
         title: "Rust",
         path: siRust.path,
         color: '#dea685'
     },
-    {
-        title: "Svelte",
-        path: siSvelte.path,
-        color: hexColor(siSvelte.hex)
-    }
 ]
